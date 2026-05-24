@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- El parámetro ?v=3 obliga al navegador a descargar los nuevos estilos azules y burdeos -->
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
             <p class="subtitle">Comida de siempre, raciones y celebraciones en Villaverde</p>
             <div class="hero-buttons">
                 <a href="tel:639587883" class="btn btn-primary">Llamar ahora</a>
-                <a href="https://maps.google.com/?q=C.+Berrocal,+5+-+Villaverde,+Madrid" target="_blank" class="btn btn-secondary">Cómo llegar</a>
+                <a href="https://maps.google.com/maps?q=C.+Berrocal,+5+-+Villaverde,+Madrid" target="_blank" class="btn btn-secondary">Cómo llegar</a>
                 <a href="https://www.instagram.com/sidreriadelnorte_madrid/" target="_blank" class="btn btn-outline">Ver Instagram</a>
             </div>
         </div>
@@ -31,23 +32,19 @@
         <div class="container">
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🍽️</div>
-                    <h3>Menú diario</h3>
+                    <h3 class="text-secondary">Menú diario</h3>
                     <p>Cocina casera y tradicional de lunes a viernes.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🥘</div>
-                    <h3>Raciones</h3>
+                    <h3 class="text-secondary">Raciones</h3>
                     <p>Opciones clásicas perfectas para compartir.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🦐</div>
-                    <h3>Marisco</h3>
+                    <h3 class="text-secondary">Marisco</h3>
                     <p>Producto fresco preparado al momento.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🥂</div>
-                    <h3>Celebraciones</h3>
+                    <h3 class="text-secondary">Celebraciones</h3>
                     <p>Espacios preparados para grupos y eventos.</p>
                 </div>
             </div>
@@ -80,7 +77,7 @@
     <!-- 5. Sección destacada "Celebraciones y grupos" -->
     <section class="celebraciones">
         <div class="celebraciones-img">
-            <!-- La imagen está en el CSS como img3.jpeg (vertical) -->
+            <!-- La imagen se carga por CSS. Si falla, el fondo será azul marino. -->
         </div>
         <div class="celebraciones-content">
             <h2 class="text-light">Un espacio para celebraciones y grupos</h2>
@@ -135,13 +132,13 @@
                     <p>Ven a visitarnos o llámanos para asegurar tu mesa, especialmente para los fines de semana.</p>
                     
                     <div class="ubicacion-buttons">
-                        <a href="https://maps.google.com/?q=C.+Berrocal,+5+-+Villaverde,+Madrid" target="_blank" class="btn btn-secondary">Abrir en Google Maps</a>
+                        <a href="https://maps.google.com/maps?q=C.+Berrocal,+5+-+Villaverde,+Madrid" target="_blank" class="btn btn-secondary">Abrir en Google Maps</a>
                         <a href="https://www.instagram.com/sidreriadelnorte_madrid/" target="_blank" class="btn btn-outline" style="border-color: var(--secondary-color); color: var(--secondary-color);">Ver Instagram</a>
                     </div>
                 </div>
                 <div class="ubicacion-mapa">
                     <div class="mapa-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3040.540417639582!2d-3.6938927846059296!3d40.352467467484434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226cf716fae91%3A0xc34b3f2eb305c6d3!2sC.%20Berrocal%2C%205%2C%2028021%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=C.+Berrocal,+5+-+Villaverde,+Madrid&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -157,7 +154,7 @@
             
             <div class="cierre-telefonos">
                 <a href="tel:639587883" class="btn btn-secondary btn-huge">📞 639 58 78 83</a>
-                <a href="tel:917951348" class="btn btn-outline btn-huge">📞 917 95 13 48</a>
+                <a href="tel:917951348" class="btn btn-outline btn-huge" style="border-color: white; color: white;">📞 917 95 13 48</a>
             </div>
         </div>
     </section>
@@ -175,10 +172,10 @@
     <!-- Botón Sticky para móvil -->
     <div class="sticky-mobile-nav">
         <a href="tel:639587883" class="sticky-btn sticky-call">
-            📞 Llamar
+            Llamar
         </a>
-        <a href="https://maps.google.com/?q=C.+Berrocal,+5+-+Villaverde,+Madrid" target="_blank" class="sticky-btn sticky-map">
-            📍 Cómo llegar
+        <a href="https://maps.google.com/maps?q=C.+Berrocal,+5+-+Villaverde,+Madrid" target="_blank" class="sticky-btn sticky-map">
+            Cómo llegar
         </a>
     </div>
 
